@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- <div class="overlay"></div> -->
+    <div class="website-container">
+      <header class="header-div">
+        <div class="navbar-upperHalf">
+          <div class="menu-bar">
+            <label for="check" class="hamburger"
+              ><i class="fa-solid fa-bars"></i>
+            </label>
+          </div>
+          <div class="home-button">
+            <a href="Home.html"> <h3>SHOP</h3></a>
+          </div>
+          <a href="cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div >
+       
+          <input type="checkbox" id="check" class="hamburger-checkbox" />
+          <ul class="menu-list">
+            <li>
+              <a href="mens-outerwear.html">Men's Outerwear</a>
+            </li>
+            <li>
+              <a href="womens-outerwear.html">Ladies Outerwear</a>
+            </li>
+            <li>
+              <a href="mens-tshirt.html">Men's T-shirt</a>
+            </li>
+            <li><a href="womens-tshirt.html">Ladies T-shirt</a></li>
+          </ul>
+       
+      </header>
+
+      <div class="content-container">
+        <!-- Mens outer wear.  -->
+        <div class="overlay"></div>
+        <div class="mens-outerwear">
+          <a href="mens-outerwear.html"
+            ><img
+              style="padding-bottom: 4vh"
+              src="Home_images/mens/mens_outerwear.jpg"
+              alt="Men's Outerwear"
+          /></a>
+
+          <p class="clothing-title">Men's Outerwear</p>
+          <a href="mens-outerwear.html">
+            <button class="shop-now-button">SHOP NOW</button></a
+          >
+        </div>
+
+        <!-- Womens outer wear. Same as above code -->
+        <div class="mens-outerwear">
+          <a href="womens-outerwear.html"
+            ><img
+              style="padding-bottom: 4vh"
+              src="Home_images/women/ladies_outerwear.jpg"
+              alt="Ladies's Outerwear"
+          /></a>
+
+          <p class="clothing-title">Ladies's Outerwear</p>
+          <a href="womens-outerwear.html">
+            <button class="shop-now-button">SHOP NOW</button></a
+          >
+        </div>
+
+        <!-- This for double picture -->
+        <div class="men-women-shirts">
+          <div class="men-shirt-div">
+            <a class="men-shirt-anchor" href="mens-tshirt.html"
+              ><img src="Home_images/mens/mens_tshirts.jpg"
+            /></a>
+            <p class="clothing-title">Mens T-shirts</p>
+            <a href="mens-tshirt.html">
+              <button class="shop-now-button">SHOP NOW</button>
+            </a>
+          </div>
+          <div class="women-shirt-div">
+            <a class="women-shirt-anchor" href="womens-tshirt.html"
+              ><img src="Home_images/women/ladies_tshirts.jpg"
+            /></a>
+            <p class="clothing-title">Women's T-shirts</p>
+            <a href="womens-tshirt.html">
+              <button class="shop-now-button">SHOP NOW</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <footer class="footer-container">
+        <p style="font-size: 1rem; color: grey">Made By Polymer</p>
+        <div class="demo-only">DEMO ONLY</div>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart-SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="cart-page">
+    <div class="overlay"></div>
+    <div class="website-container">
+      <header class="header-div" style="margin-bottom: 0">
+        <div class="navbar-upperHalf">
+          <div class="menu-bar">
+            <label for="check" class="hamburger"
+              ><i class="fas fa-bars"></i
+            ></label>
+          </div>
+          <div class="home-button">
+            <a href="Home.html"> <h3>SHOP</h3></a>
+          </div>
+          <a href="cart-page.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <input type="checkbox" id="check" class="hamburger-checkbox" />
+        <ul class="menu-list">
+          <li><a href="mens-outerwear.html">Men's Outerwear</a></li>
+          <li><a href="mens-outerwear.html">Ladies Outerwear</a></li>
+          <li><a href="mens-outerwear.html">Men's T-shirt</a></li>
+          <li><a href="mens-outerwear.html">Ladies T-shirt</a></li>
+        </ul>
+      </header>
+
+      <div class="content-container">
+        <h1 style="font-size: 16.9px; font-weight: 500;margin: 0px 0px 4px; color: #202020">
+          Your Cart
+        </h1>
+        <p style="font-size: 0.8rem; color: grey">(1 items)</p>
+        <div class="cart-item-div">
+          <a href="item-details.html" class="cart-item-image">
+            <img src="images/1.jpg" style="width: 72px; height: 72px"
+          /></a>
+          <div class="inner-style">
+            <a
+              href="item-details.html"
+              class="item-name-cart"
+              style="color: black"
+              ><p style="color: black;font-size: 13px;margin-top: 0px;">Grey Heather Fleece Zip Hoodie</p>
+            </a>
+
+            <div class="cart-item-details">
+              <div class="cart-quantity">
+                <label style="font-size: 13px" for="quantity">Qty:</label>
+                <select
+                  style="border: none; background-color: white; outline: none"
+                  name="quant"
+                  id="quantity"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+
+              <p style="font-size: 13px">Size: M</p>
+              <p style="font-size: 13px">$38.85</p>
+            </div>
+          </div>
+
+          <a class="cancel-button" href="#"
+            ><i
+              class="fas fa-times"
+              style="font-size: 1rem; color: grey; margin-right: 1rem"
+            ></i
+          ></a>
+        </div>
+
+        <div class="cart-item-div">
+          <a href="item-details.html" class="cart-item-image">
+            <img src="images/1.jpg " style="width: 72px; height: 72px"
+          /></a>
+          <div class="inner-style">
+            <a
+              href="item-details.html"
+              class="item-name-cart"
+              style="color: black"
+              ><p style="color: black;font-size: 13px;">Grey Heather Fleece Zip Hoodie</p></a
+            >
+
+            <div class="cart-item-details">
+              <div class="cart-quantity" >
+                <label style="font-size: 13px" for="quantity">Qty:</label>
+                <select
+                  style="border: none; background-color: white; outline: none"
+                  name="quant"
+                  id="quantity"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+
+              <p style="font-size: 13px;">Size: M</p>
+              <p style="font-size: 13px;">$38.85</p>
+            </div>
+          </div>
+
+          <a class="cancel-button" href="#"
+            ><i
+              class="fas fa-times"
+              style="font-size: 1rem; color: grey; margin-right: 1rem"
+            ></i
+          ></a>
+        </div>
+
+        <div class="total-checkout-div">
+          <p style="color: black; font-weight: bold; font-size: 13px">Total:</p>
+          <p style="color: black; font-weight: bold; font-size: 13px">
+            $131.40
+          </p>
+          <a href="checkout-page.html">
+            <button class="add-item-button">CHECKOUT</button>
+          </a>
+        </div>
+      </div>
+
+      <a href="checkout-page.html"
+        ><div class="checkout-responsive-div">CHECKOUT</div></a
+      >
+
+      <footer class="footer-container">
+        <p style="font-size: 1rem; color: grey">Made By Polymer</p>
+        <div class="demo-only">DEMO ONLY</div>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

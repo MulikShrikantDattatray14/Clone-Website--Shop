@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout-Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/shopping-bag.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="checkout-page">
+    <div class="website-container">
+      <header class="header-div" style="margin-bottom: 0">
+        <div class="navbar-upperHalf">
+          <div class="menu-bar">
+            <label for="check" class="hamburger"
+              ><i class="fas fa-bars"></i
+            ></label>
+          </div>
+          <div class="home-button">
+            <a href="Home.html"> <h3>SHOP</h3></a>
+          </div>
+          <a href="cart-page.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <input type="checkbox" id="check" class="hamburger-checkbox" />
+        <ul class="menu-list" >
+          <li><a href="mens-outerwear.html">Men's Outerwear</a></li>
+          <li><a href="mens-outerwear.html">Ladies Outerwear</a></li>
+          <li><a href="mens-outerwear.html">Men's T-shirt</a></li>
+          <li><a href="mens-outerwear.html">Ladies T-shirt</a></li>
+        </ul>
+      </header>
+      <div class="content-container" style="margin-top: 3.5rem">
+        <div class="overlay"></div>
+        <h1 style="font-weight: 400; margin-bottom: 1rem">Checkout</h1>
+        <p style="font-size: 0.8rem; color: grey">
+          Shop is a demo app - form data will not be sent
+        </p>
+        <div class="checkout-container">
+          <div class="account-details">
+            <h2>Account Information</h2>
+
+            <div style="position: relative">
+              <input
+                class="inputBox"
+                id="email"
+                type="text"
+                placeholder="Email"
+                required
+              />
+              <label class="inputLabel" for="email"> Email </label>
+            </div>
+
+            <div style="position: relative">
+              <input
+                class="inputBox"
+                id="phone"
+                type="text"
+                placeholder="Phone Number"
+                required
+              />
+              <label class="inputLabel" for="phone"> Phone Number </label>
+            </div>
+            <h2>Shipping Address</h2>
+
+            <div style="position: relative">
+              <input
+                class="inputBox"
+                type="text"
+                placeholder="Shipping Address"
+                id="ship"
+                required
+              />
+              <label class="inputLabel" for="ship"> Shipping Address </label>
+            </div>
+
+            <div style="position: relative">
+              <input
+                class="inputBox"
+                id="city"
+                type="text"
+                placeholder="City"
+                required
+              />
+              <label class="inputLabel" for="city"> City </label>
+            </div>
+            <div class="state-province-div">
+              <div style="position: relative">
+                <input
+                  class="inputBox"
+                  type="text"
+                  placeholder="State/Province"
+                  id="state"
+                  required
+                />
+                <label class="inputLabel" for="state"> State/Province </label>
+              </div>
+              <div style="position: relative">
+                <input
+                  class="inputBox"
+                  type="text"
+                  placeholder="Zip/Postal Code"
+                  id="zip"
+                  required
+                />
+                <label class="inputLabel" for="zip"> Zip/Postal Code </label>
+              </div>
+            </div>
+
+            <label class="checkout-label" for="Country">Country</label>
+            <select class="select-country" name="country" id="Country">
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+            </select>
+
+            <h2>Billing Address</h2>
+            <div class="diff-addr-checkbox">
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+
+                  gap: 2px;
+                "
+              >
+                <input
+                  id="addr-checkbox"
+                  name="address"
+                  type="checkbox"
+                  style="width: 20px; height: 15px"
+                />
+                <label class="checkout-label" for="addr-checkbox"
+                  >Use different billing address</label
+                >
+              </div>
+
+              <div class="new-address-details" style="display: none">
+                <div style="position: relative">
+                  <input
+                    class="inputBox"
+                    id="add"
+                    type="text"
+                    placeholder="Address"
+                    required
+                  />
+                  <label class="inputLabel" for="add"> Address </label>
+                </div>
+                <div style="position: relative">
+                  <input
+                    class="inputBox"
+                    id="cit"
+                    type="text"
+                    placeholder="Cit"
+                    required
+                  />
+                  <label class="inputLabel" for="cit"> City </label>
+                </div>
+                <div class="state-province-div">
+                  <div style="position: relative">
+                    <input
+                      class="inputBox"
+                      type="text"
+                      placeholder="State/Province"
+                      id="State/Province"
+                      required
+                    />
+                    <label class="inputLabel" for="State/Province">
+                      State/Province
+                    </label>
+                  </div>
+                  <div style="position: relative">
+                    <input
+                      class="inputBox"
+                      type="text"
+                      placeholder="Zip/Postal Code"
+                      id="Zip/Postal Code"
+                      required
+                    />
+                    <label class="inputLabel" for="Zip/Postal Code">
+                      Zip/Postal Code
+                    </label>
+                  </div>
+                </div>
+
+                <h2>Country</h2>
+                <select
+                  class="select-country"
+                  name="country"
+                  id="Country"
+                  style="width: 100%"
+                >
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="payment-method">
+            <h2>Payment Method</h2>
+
+            <div style="position: relative">
+              <input
+                class="inputBox"
+                type="text"
+                placeholder="Cardholder Name"
+                id="Cardholder Name"
+                required
+              />
+              <label class="inputLabel" for="Cardholder Name">
+                Cardholder Name
+              </label>
+            </div>
+
+            <div style="position: relative">
+              <input
+                class="inputBox"
+                id="Card Number"
+                type="text"
+                placeholder="Card Number"
+                required
+              />
+              <label class="inputLabel" for="Card Number"> Card Number </label>
+            </div>
+            <label class="checkout-label" for="Country">Expiry</label>
+            <div
+              style="display: flex; width: 100%; justify-content: space-between"
+            >
+              <select
+                class="select-country"
+                style="width: 33%; margin-right: 0.5rem"
+                name="month"
+                id="Month"
+              >
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+              </select>
+              <select
+                class="select-country"
+                style="width: 33%; margin-right: 0.5rem"
+                name="year"
+                id="Year"
+              >
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+              </select>
+              <input
+                class="inputBox"
+                style="margin: 0; padding: 0; text-align: center; width: 33%"
+                type="text"
+                placeholder="CVV"
+                id="CVV"
+                required
+              />
+            </div>
+
+            <h2>Order Summary</h2>
+            <div class="checkout-item-summary">
+              <div style="display: flex; justify-content: space-between">
+                <span>Grey Heather Fleece Zip Hoodie</span> <span> $38.85</span>
+              </div>
+
+              <br />
+              <div style="display: flex; justify-content: space-between">
+                <span>Total:</span>
+                <span> $38.85</span>
+              </div>
+            </div>
+            <br />
+            <a href="Home.html">
+              <button class="add-item-button">PLACE ORDER</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="Home.html"
+        ><div class="checkout-responsive-div">PLACE ORDER</div></a
+      >
+
+      <footer class="footer-container">
+        <p style="font-size: 1rem; color: grey">Made By Polymer</p>
+        <div class="demo-only">DEMO ONLY</div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
