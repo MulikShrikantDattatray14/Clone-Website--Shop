@@ -809,7 +809,9 @@ input::placeholder {
 input {
   width: 100%;
 }
-
+.inputBox:focus{
+  border-bottom: 2px solid black;
+ }
 /* Hamburger menu */
 
 #check:checked + .menu-list {

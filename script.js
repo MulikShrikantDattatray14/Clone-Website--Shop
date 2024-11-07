@@ -11,6 +11,8 @@ window.addEventListener("resize", () => {
     overlay.style.display = "none";
   }
 });
+
+
 let check= document.querySelector("#addr-checkbox")
 let newadd= document.querySelector(".new-address-details");
 check.addEventListener("change", () => {
